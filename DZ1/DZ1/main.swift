@@ -14,23 +14,36 @@ enum Currency: String {
     case EUD = "EUD"
 }
 
+func ForDate(StringDate: String) -> Date? {
+    let dateFormatterGet = DateFormatter()
+    dateFormatterGet.dateFormat = "yyyy-MM-dd"
+    return dateFormatterGet.date(from: StringDate)
+}
+
 protocol PrintProtocol {
     func printInfo()
 }
 
-class Account : PrintProtocol {
+class ForAcc {
     var id: Int
     var balance: Double
     var currency: Currency?
+    
+    init(id: Int, balance: Double, currency: String) {
+        self.id = id
+        self.balance = balance
+        self.currency = Currency(rawValue: currency)
+    }
+}
+
+class Account : ForAcc, PrintProtocol {
     var description: String
     var offer: String?
     
     init(id: Int, balance: Double, currency: String, description: String, offer: String? = "default offer") {
-        self.id = id
-        self.balance = balance
-        self.currency = Currency(rawValue: currency)
         self.description = description
         self.offer = offer
+        super.init(id: id, balance: balance, currency: currency)
     }
     
     func printInfo() {
@@ -41,12 +54,6 @@ class Account : PrintProtocol {
 //var ac2 = Account(id: 10, balance: 26553.373, currency: "RUR", description: "good dexcription")
 //ac1.printInfo()
 //ac2.printInfo()
-
-func ForDate(StringDate: String) -> Date? {
-    let dateFormatterGet = DateFormatter()
-    dateFormatterGet.dateFormat = "yyyy-MM-dd"
-    return dateFormatterGet.date(from: StringDate)
-}
 
 class ReissueInfo : PrintProtocol {
     var date: Date?
@@ -69,21 +76,16 @@ class ReissueInfo : PrintProtocol {
 //var rei = ReissueInfo(sdate: "2018-09-16",info: "info", address: "address")
 //rei.printInfo()
 
-class Card: PrintProtocol {
-    var id: Int
-    var balance: Double
-    var currency: Currency?
+class Card: ForAcc, PrintProtocol {
     var reissueInfo: ReissueInfo?
     
     init(id: Int, balance: Double, currency: String, reissueInfo: ReissueInfo? = nil ){
-        self.id = id
-        self.balance = balance
-        self.currency = Currency(rawValue: currency)
         self.reissueInfo = reissueInfo
+        super.init(id: id, balance: balance, currency: currency)
     }
     
     func printInfo() {
-        print("Card \ncard id: \(id) \nbalance: \(balance) \ncurrency: \(currency?.rawValue ?? "no currency") \n\( reissueInfo?.address ?? "no reissure")")
+        print("Card \ncard id: \(id) \nbalance: \(balance) \ncurrency: \(currency?.rawValue ?? "no currency") \nRessue address:\( reissueInfo?.address ?? "no reissure")")
     }
 }
 //var car = Card(id: 1, balance: 23455678.45, currency: "RUR", reissueInfo: rei)
@@ -98,7 +100,7 @@ class ServerResponce: PrintProtocol {
         self.accounts = accountArray
     }
     func printInfo() {
-        print("Server Response \ncards: \(cards) \naccounts: \(accounts)")
+        print("Server Responce \ncards: \(cards) \naccounts: \(accounts)")
     }
 }
 
@@ -128,4 +130,3 @@ for i in array {
     i.printInfo()
     
 }
-
