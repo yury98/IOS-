@@ -100,18 +100,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Rlx-8t-pDy"/>
                     </view>
-                    <navigationItem key="navigationItem" id="djK-Fu-U68">
-                        <barButtonItem key="rightBarButtonItem" style="plain" id="CeI-ru-aAX">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="DdJ-Vl-Ewb">
-                                <rect key="frame" x="276" y="7" width="83" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Настройки"/>
-                            </button>
-                            <connections>
-                                <segue destination="LKw-Mv-AJZ" kind="show" identifier="SettingsSegue" id="QQP-x2-uNc"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="djK-Fu-U68"/>
                     <connections>
                         <outlet property="Table" destination="m1I-ot-Fcq" id="UDb-RX-wC8"/>
                         <outlet property="ViewTable" destination="ePo-w3-1rP" id="iiq-CH-RQR"/>
@@ -220,35 +209,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sSx-8D-qFH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2866" y="246"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="97K-Rk-R3d">
-            <objects>
-                <viewController id="LKw-Mv-AJZ" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="gtm-Mf-kR7">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Когда-нибудь здесь будут настройки" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qbz-cI-Ech">
-                                <rect key="frame" x="0.0" y="323" width="375" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="qbz-cI-Ech" firstAttribute="leading" secondItem="nj3-Qz-spJ" secondAttribute="leading" id="Apb-K1-Vzo"/>
-                            <constraint firstItem="qbz-cI-Ech" firstAttribute="leading" secondItem="nj3-Qz-spJ" secondAttribute="leading" id="Bde-Tf-7gT"/>
-                            <constraint firstAttribute="trailing" secondItem="qbz-cI-Ech" secondAttribute="trailing" id="MUV-g9-OUN"/>
-                            <constraint firstItem="qbz-cI-Ech" firstAttribute="centerY" secondItem="gtm-Mf-kR7" secondAttribute="centerY" id="TCg-ZW-sKw"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="nj3-Qz-spJ"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="fGh-SG-UDH" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1942" y="-338"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="L5m-f4-qvw">
