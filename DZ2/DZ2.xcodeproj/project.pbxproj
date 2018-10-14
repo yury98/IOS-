@@ -12,6 +12,15 @@
 		D219597121735F3900DF7D38 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D219596F21735F3900DF7D38 /* Main.storyboard */; };
 		D219597321735F3C00DF7D38 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D219597221735F3C00DF7D38 /* Assets.xcassets */; };
 		D219597621735F3C00DF7D38 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D219597421735F3C00DF7D38 /* LaunchScreen.storyboard */; };
+		D21959872173A73E00DF7D38 /* AdCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21959852173A73E00DF7D38 /* AdCell.swift */; };
+		D21959882173A73E00DF7D38 /* AdCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D21959862173A73E00DF7D38 /* AdCell.xib */; };
+		D219598B2173A76A00DF7D38 /* LabCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21959892173A76A00DF7D38 /* LabCell.swift */; };
+		D219598C2173A76A00DF7D38 /* LabCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D219598A2173A76A00DF7D38 /* LabCell.xib */; };
+		D219598E2173AADC00DF7D38 /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D219598D2173AADC00DF7D38 /* SettingsController.swift */; };
+		D21959902173ACC000DF7D38 /* Lab.swift in Sources */ = {isa = PBXBuildFile; fileRef = D219598F2173ACC000DF7D38 /* Lab.swift */; };
+		D21959922173AD3C00DF7D38 /* Labs.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21959912173AD3C00DF7D38 /* Labs.swift */; };
+		D21959942173DBBE00DF7D38 /* LabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21959932173DBBE00DF7D38 /* LabController.swift */; };
+		D21959962173E05900DF7D38 /* FullImageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21959952173E05900DF7D38 /* FullImageController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +31,15 @@
 		D219597221735F3C00DF7D38 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D219597521735F3C00DF7D38 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D219597721735F3C00DF7D38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D21959852173A73E00DF7D38 /* AdCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdCell.swift; sourceTree = "<group>"; };
+		D21959862173A73E00DF7D38 /* AdCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AdCell.xib; sourceTree = "<group>"; };
+		D21959892173A76A00DF7D38 /* LabCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabCell.swift; sourceTree = "<group>"; };
+		D219598A2173A76A00DF7D38 /* LabCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LabCell.xib; sourceTree = "<group>"; };
+		D219598D2173AADC00DF7D38 /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
+		D219598F2173ACC000DF7D38 /* Lab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lab.swift; sourceTree = "<group>"; };
+		D21959912173AD3C00DF7D38 /* Labs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Labs.swift; sourceTree = "<group>"; };
+		D21959932173DBBE00DF7D38 /* LabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabController.swift; sourceTree = "<group>"; };
+		D21959952173E05900DF7D38 /* FullImageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullImageController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,10 +74,19 @@
 			children = (
 				D219596B21735F3900DF7D38 /* AppDelegate.swift */,
 				D219596D21735F3900DF7D38 /* ViewController.swift */,
+				D21959932173DBBE00DF7D38 /* LabController.swift */,
+				D219598D2173AADC00DF7D38 /* SettingsController.swift */,
+				D21959952173E05900DF7D38 /* FullImageController.swift */,
 				D219596F21735F3900DF7D38 /* Main.storyboard */,
 				D219597221735F3C00DF7D38 /* Assets.xcassets */,
 				D219597421735F3C00DF7D38 /* LaunchScreen.storyboard */,
 				D219597721735F3C00DF7D38 /* Info.plist */,
+				D21959852173A73E00DF7D38 /* AdCell.swift */,
+				D21959862173A73E00DF7D38 /* AdCell.xib */,
+				D21959892173A76A00DF7D38 /* LabCell.swift */,
+				D219598A2173A76A00DF7D38 /* LabCell.xib */,
+				D219598F2173ACC000DF7D38 /* Lab.swift */,
+				D21959912173AD3C00DF7D38 /* Labs.swift */,
 			);
 			path = DZ2;
 			sourceTree = "<group>";
@@ -122,7 +149,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D219598C2173A76A00DF7D38 /* LabCell.xib in Resources */,
 				D219597621735F3C00DF7D38 /* LaunchScreen.storyboard in Resources */,
+				D21959882173A73E00DF7D38 /* AdCell.xib in Resources */,
 				D219597321735F3C00DF7D38 /* Assets.xcassets in Resources */,
 				D219597121735F3900DF7D38 /* Main.storyboard in Resources */,
 			);
@@ -135,8 +164,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D21959872173A73E00DF7D38 /* AdCell.swift in Sources */,
+				D21959942173DBBE00DF7D38 /* LabController.swift in Sources */,
+				D219598E2173AADC00DF7D38 /* SettingsController.swift in Sources */,
 				D219596E21735F3900DF7D38 /* ViewController.swift in Sources */,
+				D21959902173ACC000DF7D38 /* Lab.swift in Sources */,
+				D21959922173AD3C00DF7D38 /* Labs.swift in Sources */,
 				D219596C21735F3900DF7D38 /* AppDelegate.swift in Sources */,
+				D219598B2173A76A00DF7D38 /* LabCell.swift in Sources */,
+				D21959962173E05900DF7D38 /* FullImageController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
