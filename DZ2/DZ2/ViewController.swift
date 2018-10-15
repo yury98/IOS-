@@ -12,6 +12,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 
     @IBOutlet weak var Table: UITableView!
     @IBOutlet weak var ViewTable: UIView!
+    @IBOutlet weak var Settings: UIButton!
     
     var model = Labs()
     var refresh: UIRefreshControl?
@@ -75,6 +76,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             let lab = model.labs[indexPath.row - x]
             performSegue(withIdentifier: segueName, sender: lab)
         }
+    }
+    
+    @IBAction func ViewSettings(_ sender: Any) {
+        performSegue(withIdentifier: "toSettings", sender: (Any).self)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

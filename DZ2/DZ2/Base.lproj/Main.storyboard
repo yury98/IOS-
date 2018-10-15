@@ -100,8 +100,23 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Rlx-8t-pDy"/>
                     </view>
-                    <navigationItem key="navigationItem" id="djK-Fu-U68"/>
+                    <navigationItem key="navigationItem" id="djK-Fu-U68">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="bMP-93-1H5">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="2K8-H9-ocP">
+                                <rect key="frame" x="276" y="7" width="83" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Настройки"/>
+                                <connections>
+                                    <action selector="ViewSettings:" destination="Bmh-GD-WJM" eventType="touchUpInside" id="pwd-G1-jTa"/>
+                                </connections>
+                            </button>
+                            <connections>
+                                <segue destination="R7k-i0-LsN" kind="show" identifier="toSettings" id="5VU-2e-tFl"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
+                        <outlet property="Settings" destination="2K8-H9-ocP" id="rcT-Yc-20F"/>
                         <outlet property="Table" destination="m1I-ot-Fcq" id="UDb-RX-wC8"/>
                         <outlet property="ViewTable" destination="ePo-w3-1rP" id="iiq-CH-RQR"/>
                         <segue destination="gaT-Gm-F2R" kind="show" identifier="toInformation" id="wVH-VT-wwO"/>
@@ -110,6 +125,33 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rIi-la-v5g" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1096.8" y="168.6656671664168"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="WV7-yQ-HaF">
+            <objects>
+                <viewController id="R7k-i0-LsN" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kCI-9q-Z9Q">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Когда-нибудь тут будут настройки" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fdg-pE-0Gm">
+                                <rect key="frame" x="48" y="323" width="279" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Fdg-pE-0Gm" firstAttribute="centerY" secondItem="kCI-9q-Z9Q" secondAttribute="centerY" id="BZR-Dg-jR6"/>
+                            <constraint firstItem="Fdg-pE-0Gm" firstAttribute="centerX" secondItem="kCI-9q-Z9Q" secondAttribute="centerX" id="aQV-Aa-gTh"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="9yU-5i-OjB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pCT-Qf-uXF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1920.8" y="-347.67616191904051"/>
         </scene>
         <!--Lab Controller-->
         <scene sceneID="Fgg-nZ-D4Z">
